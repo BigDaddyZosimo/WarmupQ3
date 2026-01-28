@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>   CALCOMALC!!!!</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .box, .boxie, .boxer, .boxest {
+    padding: 20px;        
+    margin-bottom: 30px;  
+    border: 1px solid #ccc; 
+}
+  </style>
+</head>
+
+<body>
+
+
+<div class="box">
+    <h2>add 2 numbers</h2>
+    <input type="number" id="add1" placeholder="enter number">
+    <input type="number" id="add2" placeholder="enter number">
+    <br>
+    <button onclick="add()">Calculate</button>
+    <div id="addResult"></div>
+</div>
+
+<script>
+function add(){
+    let n1 = Number(document.getElementById("add1").value)
+    let n2 = Number(document.getElementById("add2").value)
+    let total = n1 + n2
+    document.getElementById("addResult").innerHTML = "result: " + total
+}
+</script>
+
+<br>
+
+
+<div class="boxie">
+    <h2>subtract 2 numbers</h2>
+    <input type="number" id="sub1" placeholder="enter number">
+    <input type="number" id="sub2" placeholder="enter number">
+    <br>
+    <button onclick="subtract()">Calculate</button>
+    <div id="subResult"></div>
+</div>
+
+<script>
+function subtract(){
+    let n1 = Number(document.getElementById("sub1").value)
+    let n2 = Number(document.getElementById("sub2").value)
+    let total = n1 - n2
+    document.getElementById("subResult").innerHTML = "result: " + total
+}
+</script>
+
+<br>
+
+<div class="boxer">
+    <h2>multiply 2 numbers</h2>
+    <input type="number" id="mult1" placeholder="enter number">
+    <input type="number" id="mult2" placeholder="enter number">
+    <br>
+    <button onclick="multiplyCalc()">Calculate</button>
+    <div id="supermanResult"></div>
+</div>
+
+<script>
+function multiplyCalc(){
+    let n1 = Number(document.getElementById("mult1").value)
+    let n2 = Number(document.getElementById("mult2").value)
+    let total = n1 * n2
+    document.getElementById("supermanResult").innerHTML = "result: " + total
+}
+</script>
+
+<br>
+
+<div class="boxest">
+    <h2>divide 2 numbers</h2>
+    <input type="number" id="divi1" placeholder="enter number">
+    <input type="number" id="divi2" placeholder="enter number">
+    <br>
+    <button onclick="divideCalc()">Calculate</button>
+    <div id="superbroResult"></div>
+</div>
+
+<script>
+function divideCalc(){
+    let n1 = Number(document.getElementById("divi1").value)
+    let n2 = Number(document.getElementById("divi2").value)
+
+    let total = n1 / n2
+    document.getElementById("superbroResult").innerHTML = "result: " + total
+}
+</script>
+
+</body>
+</html>
